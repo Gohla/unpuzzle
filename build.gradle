@@ -26,11 +26,11 @@ if( !hasProperty( 'bintrayUser' ) )
 if( !hasProperty( 'bintrayKey' ) )
   ext.bintrayKey = ''
 
-task('build')
+task('unpuzzle-build')
 
 task('buildExamples', type: GradleBuild) { task ->
   dir = file('examples')
-  tasks = [ 'build' ]
+  tasks = [ 'unpuzzle-build' ]
 }
 
 // build.finalizedBy buildExamples
@@ -67,4 +67,3 @@ artifactory {
     }
   }
 }
-
