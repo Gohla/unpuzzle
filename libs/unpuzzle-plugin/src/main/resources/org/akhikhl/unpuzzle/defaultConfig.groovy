@@ -96,14 +96,14 @@ unpuzzle {
 
     sources {
 
-      source "${eclipseArchiveMirror}/technology/epp/downloads/release/kepler/SR1/eclipse-jee-kepler-SR1-${suffix_os[current_os]}${suffix_arch[current_arch]}.${fileExt_os[current_os]}"      
+      source "${eclipseArchiveMirror}/technology/epp/downloads/release/kepler/SR1/eclipse-jee-kepler-SR1-${suffix_os[current_os]}${suffix_arch[current_arch]}.${fileExt_os[current_os]}"
       source "${eclipseArchiveMirror}/eclipse/downloads/drops4/R-4.3.1-201309111000/eclipse-SDK-4.3.1-${suffix_os[current_os]}${suffix_arch[current_arch]}.${fileExt_os[current_os]}", sourcesOnly: true
       source "${eclipseArchiveMirror}/eclipse/downloads/drops4/R-4.3.1-201309111000/eclipse-4.3.1-delta-pack.zip"
 
       languagePackTemplate '${eclipseMirror}/eclipse//technology/babel/babel_language_packs/R0.11.1/kepler/BabelLanguagePack-eclipse-${language}_4.3.0.v20131123020001.zip'
     }
   }
-    
+
   eclipseVersion('4.3.2') {
 
     eclipseMavenGroup = 'eclipse-kepler-sr2'
@@ -141,7 +141,7 @@ unpuzzle {
   }
 
   eclipseVersion('4.4.1') {
-    
+
     eclipseMavenGroup = 'eclipse-luna-sr1'
 
     eclipseMirror = 'http://mirror.netcologne.de'
@@ -157,7 +157,7 @@ unpuzzle {
       languagePackTemplate '${eclipseMirror}/eclipse//technology/babel/babel_language_packs/R0.12.1/luna/BabelLanguagePack-eclipse-${language}_4.4.0.v20141223043836.zip'
     }
   }
-  
+
   eclipseVersion('4.4.2') {
 
     eclipseMavenGroup = 'eclipse-luna-sr2'
@@ -174,7 +174,7 @@ unpuzzle {
 
       languagePackTemplate '${eclipseMirror}/eclipse//technology/babel/babel_language_packs/R0.12.1/luna/BabelLanguagePack-eclipse-${language}_4.4.0.v20141223043836.zip'
     }
-  }  
+  }
 
   eclipseVersion('4.5') {
 
@@ -194,7 +194,7 @@ unpuzzle {
   }
 
   eclipseVersion('4.5.2') {
-    
+
     eclipseMavenGroup = 'eclipse-mars-sr2'
 
     eclipseMirror = 'http://mirror.netcologne.de'
@@ -208,5 +208,21 @@ unpuzzle {
 
       languagePackTemplate '${eclipseMirror}/eclipse//technology/babel/babel_language_packs/R0.13.1/mars/BabelLanguagePack-eclipse-${language}_4.5.0.v20151128060001.zip'
     }
-  }     
+  }
+
+  eclipseVersion('4.6.2') {
+
+    eclipseMavenGroup = 'eclipse-neon-sr2'
+
+    eclipseMirror = 'http://ftp.fau.de'
+    eclipseArchiveMirror = 'http://ftp.fau.de'
+
+    sources {
+
+      source "${eclipseMirror}/eclipse/technology/epp/downloads/release/neon/R/eclipse-jee-neon-R-${suffix_os[current_os]}${suffix_arch[current_arch]}.${fileExt_os[current_os]}"
+      source "${eclipseMirror}/eclipse/eclipse/downloads/drops4/R-4.6.2-201611241400/eclipse-SDK-4.6.2-${suffix_os[current_os]}${suffix_arch[current_arch]}.${fileExt_os[current_os]}", sourcesOnly: true
+
+      languagePackTemplate '${eclipseMirror}/eclipse//technology/babel/babel_language_packs/R0.14.1/mars/BabelLanguagePack-eclipse-${language}_4.6.0.v20161126060001.zip'
+    }
+  }
 }
