@@ -26,11 +26,11 @@ if( !hasProperty( 'bintrayUser' ) )
 if( !hasProperty( 'bintrayKey' ) )
   ext.bintrayKey = ''
 
-task('build')
+task('build-custom')
 
 task('buildExamples', type: GradleBuild) { task ->
   dir = file('examples')
-  tasks = [ 'build' ]
+  tasks = [ 'build-custom' ]
 }
 
 // build.finalizedBy buildExamples
