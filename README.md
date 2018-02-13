@@ -297,12 +297,12 @@ unit-test.
 
 ## Support of multiple Eclipse versions
 
-Unpuzzle supports Eclipse versions 4.6.2, 4.5.2, 4.5, 4.4.2, 4.4.1, 4.4, 4.3.2, 4.3.1, 4.2.2, 4.2.1, 3.7.2, 3.7.1 out of the box.
+Unpuzzle supports Eclipse versions 4.7.2, 4.6.2, 4.5.2, 4.5, 4.4.2, 4.4.1, 4.4, 4.3.2, 4.3.1, 4.2.2, 4.2.1, 3.7.2, 3.7.1 out of the box.
 You can easily switch between Eclipse versions by simply specifying eclipse version in "build.gradle":
 
 ```groovy
 unpuzzle {
-  selectedEclipseVersion = '4.6.2'
+  selectedEclipseVersion = '4.7.2'
 }
 ```
 
